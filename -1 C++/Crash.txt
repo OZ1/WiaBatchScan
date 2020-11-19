@@ -1,0 +1,36 @@
+>	WiaBatchScan.exe!CWiaTransferCallback::AddRef()Строка 39
+ 	sti.dll!_IWiaTransfer_Download_Proxy@12()
+
+BUGBUG: только в первый раз зовётся AddRef
+>	WiaBatchScan.exe!CWiaTransferCallback::AddRef()Строка 39
+ 	ole32.dll!CStdIdentity::CStdIdentity(unsigned long flags=0, unsigned long dwAptId=5484, IUnknown * pUnkOuter=0x00000000, IUnknown * pUnkControl=0x00444110, IUnknown * * ppUnkInternal=0x0028f214, int * pfSuccess=0x0028f224)Строка 138
+ 	ole32.dll!CIDObject::GetOrCreateStdID(int fCreate=1, unsigned long dwFlags=3, CStdIdentity * * ppStdID=0x0028f2b0)Строка 1397
+ 	ole32.dll!ObtainStdIDFromUnk(IUnknown * pUnk=0x004518c0, unsigned long dwAptId=5484, CObjectContext * pServerCtx=0x0043c7e8, unsigned long dwFlags=3, CStdIdentity * * ppStdID=0x0028f2b0)Строка 1898
+ 	ole32.dll!StdMarshalObject(IStream * pStm=0x004a09a8, const _GUID & riid={...}, IUnknown * pUnk=0x00444110, CObjectContext * pServerCtx=0x0043c7e8, unsigned long dwDestCtx=0, void * pvDestCtx=0x00000000, unsigned long mshlflags=0)Строка 8527
+ 	ole32.dll!CDestObjectWrapper::MarshalInterface(IStream * pStm=0x004a09a8, const _GUID & riid={...}, void * pv=0x00444110, unsigned long dwDestCtx=0, void * pDestObjectWrapper=0x0028f30c, unsigned long mshlflags=0)Строка 645
+ 	ole32.dll!CoMarshalInterface(IStream * pStm=0x004a09a8, const _GUID & riid={...}, IUnknown * pUnk=0x00444110, unsigned long dwDestCtx=0, void * pvDestCtx=0x00000000, unsigned long mshlflags=0)Строка 799
+ 	ole32.dll!NdrExtInterfacePointerMarshall(_MIDL_STUB_MESSAGE * pStubMsg=0x0028f424, unsigned char * pMemory=0x00444110, const unsigned char * pFormat=0x68f431d8)Строка 1147
+ 	rpcrt4.dll!NdrpPointerMarshall(struct _MIDL_STUB_MESSAGE *,unsigned char *,unsigned char *,unsigned char const *)
+ 	rpcrt4.dll!_NdrPointerMarshall@12()
+ 	rpcrt4.dll!@NdrpClientMarshal@8()
+ 	rpcrt4.dll!_NdrClientCall2()
+ 	ole32.dll!ObjectStublessClient(void * ParamAddress=0x00000018, long Method=3)Строка 474
+ 	ole32.dll!_ObjectStubless@0()Строка 154
+ 	sti.dll!_IWiaTransfer_Download_Proxy@12()
+
+>	WiaBatchScan.exe!CWiaTransferCallback::Release()Строка 43
+ 	ole32.dll!ObtainStdIDFromUnk(IUnknown * pUnk=0x004518c0, unsigned long dwAptId=5484, CObjectContext * pServerCtx=0x0043c7e8, unsigned long dwFlags=3, CStdIdentity * * ppStdID=0x0028f2b0)Строка 1924
+ 	ole32.dll!StdMarshalObject(IStream * pStm=0x004a09a8, const _GUID & riid={...}, IUnknown * pUnk=0x00444110, CObjectContext * pServerCtx=0x0043c7e8, unsigned long dwDestCtx=0, void * pvDestCtx=0x00000000, unsigned long mshlflags=4963440)Строка 8527
+ 	ole32.dll!CDestObjectWrapper::MarshalInterface(IStream * pStm=0x004a09a8, const _GUID & riid={...}, void * pv=0x00444110, unsigned long dwDestCtx=0, void * pDestObjectWrapper=0x0028f30c, unsigned long mshlflags=0)Строка 645
+ 	ole32.dll!CoMarshalInterface(IStream * pStm=0x004a09a8, const _GUID & riid={...}, IUnknown * pUnk=0x00444110, unsigned long dwDestCtx=0, void * pvDestCtx=0x00000000, unsigned long mshlflags=0)Строка 799
+ 	ole32.dll!NdrExtInterfacePointerMarshall(_MIDL_STUB_MESSAGE * pStubMsg=0x0028f424, unsigned char * pMemory=0x00444110, const unsigned char * pFormat=0x68f431d8)Строка 1147
+ 	rpcrt4.dll!NdrpPointerMarshall(struct _MIDL_STUB_MESSAGE *,unsigned char *,unsigned char *,unsigned char const *)
+ 	rpcrt4.dll!_NdrPointerMarshall@12()
+ 	rpcrt4.dll!@NdrpClientMarshal@8()
+ 	rpcrt4.dll!_NdrClientCall2()
+ 	ole32.dll!ObjectStublessClient(void * ParamAddress=0x00000018, long Method=3)Строка 474
+ 	ole32.dll!_ObjectStubless@0()Строка 154
+ 	sti.dll!_IWiaTransfer_Download_Proxy@12()
+
+>	WiaBatchScan.exe!CWiaTransferCallback::Release()Строка 43
+ 	sti.dll!_IWiaTransfer_Download_Proxy@12()
